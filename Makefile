@@ -1,3 +1,15 @@
+.PHONY: test
+test:
+	@test "$(shell echo 123)" = "$(shell echo 123)" \
+		|| { echo Not equal; exit 2; } \
+		&& { echo Equal; }
+
+.PHONY: up
+up: start_db run_app
+
+.PHONY: down
+down: stop_db
+
 .PHONY: build_app
 build_app:
 	go build -o  ./bin/dickts ./app
