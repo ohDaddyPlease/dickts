@@ -3,3 +3,4 @@
   user_name: ""
   password: ""
   database_name: ""
+  log_level: ""

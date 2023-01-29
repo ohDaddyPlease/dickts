@@ -1,0 +1,6 @@
+  port: "5432"
+  address: "localhost"
+  user_name: "dict"
+  password: "dict"
+  database_name: "dict"
+  log_level: "info"
